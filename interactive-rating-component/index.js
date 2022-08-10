@@ -14,7 +14,7 @@ function switchVisible() {
                             = "You selected " + ele[i].value + " out of 5";
                 }
             document.getElementById('rating-state__container__div1').style.display = 'none';
-            document.getElementById('rating-state__container__div2').style.display = 'block';
+            document.getElementById('rating-state__container__div2').style.display = 'flex';
         }
     }
 }
