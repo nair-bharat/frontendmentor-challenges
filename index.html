@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <div id="rating-state__container__div1" class="rating-state__container__div1">
+    <div class="rating-state__container">
+      <div class="icon__container">
+        <img class="icon-prop" src="images/icon-star.svg" alt="icon-star">
+      </div>
+      <div class="text__heading">
+        How did we do?
+      </div>
+      <div class="text__paragraph">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+      </div>
+      <div class="radio-toolbar">
+        <input type="radio" id="radio__1" name="radioRating" value="1">
+        <label for="radio__1">1</label>
+        <input type="radio" id="radio__2" name="radioRating" value="2">
+        <label for="radio__2">2</label>
+        <input type="radio" id="radio__3" name="radioRating" value="3">
+        <label for="radio__3">3</label> 
+        <input type="radio" id="radio__4" name="radioRating" value="4">
+        <label for="radio__4">4</label>
+        <input type="radio" id="radio__5" name="radioRating" value="5" checked="checked">
+        <label for="radio__5">5</label>
+      </div>
+      
+      <div class="button__container">
+        <button class="button-style" onclick="switchVisible();">SUBMIT</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="rating-state__container__div2" class="rating-state__container__div2">
+    <div class="rating-state__container">
+      <div class="icon__container__thankyou">
+        <img class="icon-prop__thankyou" src="images/illustration-thank-you.svg" alt="icon-star">
+      </div>
+      <div id="result" class="rating_description"></div>
+      <div class="text__heading__thankyou">
+        Thank you!
+      </div>
+      <div class="text__paragraph__thankyou">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!       
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<script src="index.js"></script>
+</html>
